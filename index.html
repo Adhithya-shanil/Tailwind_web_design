@@ -7,6 +7,45 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">    Hello world!  </h1>
+    <!-- Header section -->
+    <section class="flex justify-around mt-[30px] items-center">
+        <div><a href="#"><img src="./assets/logo.svg" alt=""></a></div>
+        <div class="flex justify-around items-center">
+            <div class="flex justify-around rounded-md bg-gray-100 border border-gray-200 px-3 py-2">
+                <img src="./assets/search.svg" alt="" class="pr-2">
+                <input type="text" placeholder="Search all mutual funds" class=" text-[19px] focus:outline-none p-2.5 mr-2"  />
+            </div>
+            <nav class="flex gap-2 ml-10"> 
+              <a href="#" class="text-gray-600 hover:text-gray-900 text-[19px] px-3">Learn with Fund Guru</a>
+              <a href="#" class="text-gray-600 hover:text-gray-900 text-[19px] px-3">Explore Funds</a>
+              <a href="#" class="text-gray-600 hover:text-gray-900 text-[19px] px-3">Ask the Expert</a>
+              <a href="#" class="text-black hover:text-gray-900 text-[19px] px-3 font-bold">Login/Register</a>
+            </nav>
+          </div>
+    </section>
+    <!-- Hero section -->
+    <section class="flex  mx-[225px] mt-[57px] mb-[30px] justify-between">
+        <div class="flex flex-col justify-center items-start">
+                <h1 class="text-[44px] max-w-[416px]">Investing made Easy for you</h1>
+                <p class="text-[#22222276] max-w-[455px]">India's fastest growing investment platform with 20 Lac+ users. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.</p>
+                <button class="bg-[#00A86B] text-white rounded-md px-6 py-3 mt-[30px]">Get Started Now</button>
+        </div>
+        <div class="flex self-end">
+                <img src="./assets/banner1.jpg" alt="" class="">
+        </div>
+       
+    </section>
+    <!-- green tab -->
+    <div class="h-[190px] bg-[#E4FAF4] flex">
+        <div class="flex-col justify-center ml-[225px] pt-[30px]">
+            <h1 class="text-[30px]">Trusted by Millions of People</h1>
+            <p class="max-w-[504px] text-[#7a7a7a] mt-[20px] leading-[29px]">We are registered as a distributor with AMFI, as an investment advisor with SEBI and platform partners with BSE.</p>
+        </div>
+        <div class="flex justify-between">
+            <img src="./assets/Investing1.svg" alt="">
+            <img src="./assets/Investing2.svg" alt="">
+            <img src="./assets/Investing3.svg" alt="">
+        </div>
+    </div>
 </body>
 </html>
