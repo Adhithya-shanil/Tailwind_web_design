@@ -15,10 +15,10 @@
     </div>
     <div class="container mx-auto">
         <!-- Header section -->
-        <section class="flex flex-col lg:flex-row justify-around mt-[30px] items-center">
+        <section class="flex flex-col lg:flex-row justify-between mt-[30px] items-center">
             <!-- Top Row: Logo & Hamburger Menu (Mobile), Side by Side on Large Screens -->
             <div class="flex justify-between items-center w-full lg:w-auto px-4 lg:px-0">
-                <a href="#"><img src="./assets/logo.svg" alt=""></a>
+                <a href="#"><img src="./assets/Group.png" alt="" class="w-[200px] h-auto lg:w-[200px]"></a>
                 <!-- Hamburger Menu (Visible on Mobile) -->
                 <div class="lg:hidden flex flex-col space-y-1">
                     <span class="block w-6 h-1 bg-black rounded"></span>
@@ -54,7 +54,7 @@
                     <span class="absolute left-0 bottom-2.5 w-full h-2 bg-green-200 -z-10"></span>
                 </span> for you</h1>
                 <p class="text-[#22222276] max-w-[455px] leading-7">India's fastest growing investment platform with 20 Lac+ users. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.</p>
-                <button class="bg-[#00D09C]  text-white rounded-md  mt-[30px] text-[24px] px-8 py-6 hover:bg-[#3f7567] lg:text-[17px] lg:px-6 lg:py-3">Get Started Now</button>
+                <button class="bg-[#00D09C]  text-white rounded-md  mt-[30px] text-[24px] px-6 py-3 hover:bg-[#3f7567] lg:text-[17px]">Get Started Now</button>
         </div>
         <div class="hidden lg:block">
                 <img src="./assets/banner1.jpg" alt="" class="">
@@ -138,13 +138,15 @@
     
     
      <!-- green tab -->
-    <div class="flex justify-center gap-[50px] bg-gradient-to-b from-[#E4FAF4] to-[#FFFFFF] py-[100px] max-w-[1900px] w-full mx-auto">
+    <div class="flex justify-start pl-[30px] gap-[50px] bg-gradient-to-b from-[#E4FAF4] to-[#FFFFFF] lg:justify-center lg:py-[100px] lg:max-w-[1900px] lg:w-full lg:mx-auto">
         <div class="py-[50px] space-y-[50px]">
             <h1 class="text-[40px]">Ask the Expert</h1>
-            <p class="opacity-70">You can schedule a meeting with an expense manager</p>
-            <div class="flex gap-[50px] ">
+            <p class="opacity-70 max-w-[335px] lg:max-w-[414px]">You can schedule a meeting with an expense manager</p>
+            <div class="flex flex-col gap-[50px] lg:flex-row ">
                 <div class="space-y-[30px]">
-                    <img src="./assets/cash.svg" alt="" class="w-[30px] h-auto">
+                    <div class="bg-[#00d09c24] w-fit p-4 rounded-[4px]">
+                        <img src="./assets/cash.svg" alt="" class="w-[30px] h-auto  ">
+                    </div>
                     <h1 class="text-[24px]">Investing made easy</h1>
                     <p class="opacity-70 max-w-[260px] leading-[29px]">Three simple options- cautions, balanced, adventurous. Expert will take care of rest!</p>
                     <button class="px-6 py-2 bg-[#00D09C] text-white font-semibold rounded-[4px] shadow-md hover:bg-teal-600">
@@ -152,7 +154,9 @@
                     </button>    
                 </div>
                 <div class="space-y-[30px]">
-                    <img src="./assets/Schedule.svg" alt="" class="w-[36px] h-auto bg-[#00d09c9d] ">
+                    <div class="bg-[#00d09c24] w-fit p-4 rounded-[4px]">
+                        <img src="./assets/Schedule.svg" alt="" class="w-[36px] h-auto">
+                    </div>
                     <h1 class="text-[24px]">Schedule a meeting</h1>
                     <p class="opacity-70 max-w-[260px] leading-[29px]">Expert will give you the best advice. Schedule a meeting with the expert to know mutual funds better.</p>
                     <button class="px-6 py-2 bg-[#00D09C] text-white font-semibold rounded-[4px] shadow-md hover:bg-teal-600">
@@ -161,28 +165,66 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="hidden lg:block">
             <img src="assets/Expert.png" alt="">
         </div>
     </div>
     <!-- white tab -->
-     <div class="text-center space-y-[20px] p-[150px] bg-white shadow-[inset_0px_-50px_30px_rgba(0,0,0,0.07)] relative max-w-[1900px] w-full mx-auto">
-        <h1 class="text-[30px] font-bold">Manage your Investment from your hand.</h1>
-        <p class="opacity-50 w-[414px] text-center mx-auto">Now you will be at ease of investing, buying and selling easier with just a click.</p>
+     <div class="text-center space-y-[20px] p-[20px] pb-[100px] lg:bg-white lg:shadow-[inset_0px_-50px_30px_rgba(0,0,0,0.07)] relative lg:p-[150px] lg:max-w-[1900px] lg:w-full lg:mx-auto">
+        <h1 class="text-[30px] font-bold ,max-w-[100px] ">Manage your Investment from your hand</h1>
+        <p class="opacity-50 text-center mx-auto">Now you will be at ease of investing, buying and selling easier with just a click.</p>
         <br>
         <h1 class="text-[24px] font-semibold mb-[20px]">Download the App now</h1>
         <div class="flex justify-center space-x-4">
             <img src="./assets/app.svg" alt="">
             <img src="./assets/app2.svg" alt="">
         </div>
-        <img src="./assets/chat.svg" alt="" class="absolute top-[346px] right-[200px]">
+        <img src="./assets/chat.svg" alt="" class="absolute top-[176.4px] right-[67.5px] lg:top-[346px] lg:right-[200px]">
      </div>
      <!-- last section -->
-    <div class="flex justify-between px-[100px] py-[100px] items-start max-w-[1900px] w-full mx-auto">
-        <div class="flex">
-            <img src="./assets/logo.svg" alt="" class="w-[400px] h-auto">
+    <div class="flex flex-col items-start lg:flex-row lg:max-w-[1900px] lg:w-full lg:mx-auto lg:justify-between lg:px-[100px] lg:py-[100px]">
+        <div class="">
+            <img src="./assets/logo3.png" alt="" class="w-[200px] h-auto p-[30px]">
         </div>
-        <div class="space-y-[30px]">
+        <div class=" mx-auto space-y-4 lg:hidden px-4">
+            <!-- Accordion Items -->
+            <div class="border border-gray-300/40 rounded-lg w-full">
+                <button class="flex justify-between items-center w-full p-4 font-semibold">
+                    Quick Links
+                    <span class="text-gray-500">+</span>
+                </button>
+            </div>
+        
+            <div class="border border-gray-300/50 rounded-lg">
+                <button class="flex justify-between items-center w-full p-4 font-semibold">
+                    Top Funded Houses
+                    <span class="text-gray-500">+</span>
+                </button>
+            </div>
+        
+            <div class="border border-gray-300/50 rounded-lg">
+                <button class="flex justify-between items-center w-full p-4 font-semibold">
+                    Resources
+                    <span class="text-gray-500">+</span>
+                </button>
+            </div>
+        
+            <!-- Contact Info -->
+            <div class="flex justify-between text-sm pt-6 border-t border-gray-300/50">
+                <div>
+                    <h3 class="font-semibold">Call Us At</h3>
+                    <p class="text-gray-600">+91-8130813864</p>
+                    <p class="text-gray-600">+91-8860039452</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Write to us at</h3>
+                    <p class="text-gray-600">contact@neofund.com</p>
+                </div>
+            </div>
+        </div>
+        
+          
+        <div class="space-y-[30px] hidden lg:block">
             <div class="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-gray-700">
               
               <!-- Quick Links Section -->
