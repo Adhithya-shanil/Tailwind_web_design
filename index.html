@@ -7,84 +7,138 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header section -->
-    <section class="flex justify-around mt-[30px] items-center">
-        <div><a href="#"><img src="./assets/logo.svg" alt=""></a></div>
-        <div class="flex justify-around items-center">
-            <div class="flex justify-around rounded-md bg-gray-100 border border-gray-200 px-3 py-2">
-                <img src="./assets/search.svg" alt="" class="pr-2">
-                <input type="text" placeholder="Search all mutual funds" class=" text-[19px] focus:outline-none px-3 mr-2"  />
+    <div class="hidden lg:flex justify-end bg-[#E4FAF4] space-x-[10px] pr-[180px] text-[13px] py-[8px] max-w-[1900px] w-full mx-auto">
+        <p class="flex items-center gap-[5px] border-r-2 border-[#8d8a8a4d] pr-[8px]"><span><img src="./assets/phone.svg" alt="" class="px-[5px]"></span>Download App</p>
+        <p class="border-r-2 border-[#8d8a8a4d] pr-[8px]">Blog</p>
+        <p class="opacity-70">Language :</p>
+        <p class="flex items-center gap-[5px]">English <span><img src="./assets/dropdown.svg" alt=""></span></p>
+    </div>
+    <div class="container mx-auto">
+        <!-- Header section -->
+        <section class="flex flex-col lg:flex-row justify-around mt-[30px] items-center">
+            <!-- Top Row: Logo & Hamburger Menu (Mobile), Side by Side on Large Screens -->
+            <div class="flex justify-between items-center w-full lg:w-auto px-4 lg:px-0">
+                <a href="#"><img src="./assets/logo.svg" alt=""></a>
+                <!-- Hamburger Menu (Visible on Mobile) -->
+                <div class="lg:hidden flex flex-col space-y-1">
+                    <span class="block w-6 h-1 bg-black rounded"></span>
+                    <span class="block w-6 h-1 bg-black rounded"></span>
+                    <span class="block w-6 h-1 bg-black rounded"></span>
+                </div>
             </div>
-            <nav class="flex gap-2 ml-10"> 
-              <a href="#" class="text-gray-600 hover:text-gray-900 text-[19px] px-3">Learn with Fund Guru</a>
-              <a href="#" class="text-gray-600 hover:text-gray-900 text-[19px] px-3">Explore Funds</a>
-              <a href="#" class="text-gray-600 hover:text-gray-900 text-[19px] px-3">Ask the Expert</a>
-              <a href="#" class="text-black hover:text-gray-900 text-[19px] px-3 font-bold">Login/Register</a>
+        
+            <!-- Search Box: Moves Below Logo on Mobile -->
+            <div class="flex justify-center w-full lg:w-auto mt-15 lg:mt-0">
+                <div class="flex justify-around rounded-md bg-gray-100 border border-gray-200 px-3 py-2 w-[90%] lg:max-w-[400px]">
+                    <img src="./assets/search.svg" alt="" class="pr-2">
+                    <input type="text" placeholder="Search all mutual funds" class="text-[19px] focus:outline-none px-3 mr-2 w-full" />
+                </div>
+            </div>
+        
+            <!-- Navbar (Hidden on Mobile, Visible on Large Screens) -->
+            <nav class="hidden lg:flex gap-2 ml-10">
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-[19px] px-3">Learn with Fund Guru</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-[19px] px-3">Explore Funds</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-[19px] px-3">Ask the Expert</a>
+                <a href="#" class="text-black hover:text-gray-900 text-[19px] px-3 font-bold">Login/Register</a>
             </nav>
-          </div>
-    </section>
+        </section>
+        
+    </div>
+    
     <!-- Hero section -->
-    <section class="flex  mt-[57px] mb-[30px] justify-center gap-[550px]">
-        <div class="flex flex-col justify-center items-start">
-                <h1 class="text-[44px] max-w-[416px]">Investing made <span class="relative font-bold inline-block">
+    <section class="flex  mt-[57px] mb-[30px] justify-center gap-[550px] max-w-[1900px] w-full mx-auto">
+        <div class="flex flex-col justify-center items-start space-y-[20px]">
+                <h1 class="text-[44px] max-w-[416px] ">Investing made <span class="relative font-bold inline-block">
                     Ea<span class="relative z-10">sy</span>
                     <span class="absolute left-0 bottom-2.5 w-full h-2 bg-green-200 -z-10"></span>
                 </span> for you</h1>
-                <p class="text-[#22222276] max-w-[455px]">India's fastest growing investment platform with 20 Lac+ users. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.</p>
-                <button class="bg-[#00D09C] text-white rounded-md px-6 py-3 mt-[30px] hover:bg-[#3f7567]">Get Started Now</button>
+                <p class="text-[#22222276] max-w-[455px] leading-7">India's fastest growing investment platform with 20 Lac+ users. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.</p>
+                <button class="bg-[#00D09C]  text-white rounded-md  mt-[30px] text-[24px] px-8 py-6 hover:bg-[#3f7567] lg:text-[17px] lg:px-6 lg:py-3">Get Started Now</button>
         </div>
-        <div class="flex ">
+        <div class="hidden lg:block">
                 <img src="./assets/banner1.jpg" alt="" class="">
         </div>
        
     </section>
     <!-- green tab -->
-    <div class=" bg-[#E4FAF4] flex item-center justify-between py-[30px] px-[100px]">
-        <div class="flex-col justify-center pt-[30px] items-center ">
+    <div class="bg-[#E4FAF4] flex flex-col items-center py-[30px] gap-[100px] lg:flex-row lg:justify-center lg:max-w-[1900px] lg:gap-[500px] lg:w-full mx-auto">
+        <div class="flex flex-col justify-center pt-[30px] items-left">
             <h1 class="text-[30px]">Trusted by Millions of People</h1>
-            <p class="max-w-[504px] text-[#7a7a7a] mt-[20px] leading-[29px]">We are registered as a distributor with AMFI, as an investment advisor with SEBI and platform partners with BSE.</p>
+            <p class=" text-[#7a7a7a] mt-[20px] leading-[29px] items-center max-w-[335px] lg:max-w-[504px]">We are registered as a distributor with AMFI, as an investment advisor with SEBI and platform partners with BSE.</p>
         </div>
-        <div class="flex items-center gap-[80px] ">
+    
+        <!-- Ensured center alignment on mobile -->
+        <div class="flex flex-row items-center gap-6 lg: lg:gap-[80px]">
             <div class="flex flex-col justify-center items-center space-y-2 p-4 border border-gray-500/10 rounded-[4px]">
                 <img src="./assets/Investing1.svg" alt="">
-                <p class="text-[14px] opacity-50">ATR-823742</p>
+                <p class="text-[14px] opacity-50 text-center">ATR-823742</p>
             </div>
             <div class="flex flex-col justify-center items-center space-y-2 p-4 border border-gray-500/10 rounded-[4px]">
                 <img src="./assets/Investing2.svg" alt="">
-                <p class="text-[14px] opacity-50">INA2000382</p>
+                <p class="text-[14px] opacity-50 text-center">INA2000382</p>
             </div>
             <div class="flex flex-col justify-center items-center space-y-2 p-4 border border-gray-500/10 rounded-[4px]">
                 <img src="./assets/Investing3.svg" alt="">
-                <p class="text-[14px] opacity-50">M.Code 2384</p>
+                <p class="text-[14px] opacity-50 text-center">M.Code 2384</p>
             </div>
         </div>
     </div>
+    
     <!-- white tab -->
-     <div class="flex justify-center px-[100px] py-[150px] gap-[300px]">
-        <div>
-            <img src="./assets/Fund.svg" alt="">
+    <div class="flex flex-col justify-center px-[30px] py-[100px] gap-[50px] lg:flex-row lg:gap-[300px] lg:max-w-[1900px] lg:w-full mx-auto">
+        <!-- Centered Image -->
+        <div class="flex justify-center items-center">
+            <img src="./assets/Fund.svg" alt="" class="w-[300px] lg:w-auto mx-auto">
         </div>
-        <div>
-            <p class="text-[17px] opacity-70">About mutal funds</p>
+    
+        <div class="flex flex-col justify-center items-start text-left">
+            <p class="text-[17px] opacity-70">About mutual funds</p>
             <h1 class="text-[40px]">Learn with Fund Guru</h1>
-            <span class="flex items-center gap-2 my-4"><img src="./assets/ok.svg" alt=""><p class="text-[17px] opacity-70">Mutual Funds – Introduction and Working</p></span>
-            <span class="flex items-center gap-2 my-4"><img src="./assets/ok.svg" alt=""><p class="text-[17px] opacity-70">Benefits of Investing in Mutual Funds</p></span>
-            <span class="flex items-center gap-2 my-4"><img src="./assets/ok.svg" alt=""><p class="text-[17px] opacity-70">Mutual Fund Schemes and Types</p></span>
-            <span class="flex items-center gap-2 my-4"><img src="./assets/ok.svg" alt=""><p class="text-[17px] opacity-70">Ways to Choose Mutual Fund Schemes</p></span>
-            <span class="flex items-center gap-2 my-4"><img src="./assets/ok.svg" alt=""><p class="text-[17px] opacity-70">Offer Documents and Statements</p></span>
-            <span class="flex items-center gap-2 my-4"><img src="./assets/ok.svg" alt=""><p class="text-[17px] opacity-70">Transactions in Mutual Funds</p></span>
-            <div class="flex space-x-4">
-                <button class="px-6 py-2 bg-[#00D09C] text-white font-semibold rounded-[4px] shadow-md hover:bg-teal-600">
+    
+            <!-- Left-aligned points -->
+            <div class="flex flex-col gap-3 mt-4">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/ok.svg" alt="">
+                    <p class="text-[17px] opacity-70">Mutual Funds – Introduction and Working</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/ok.svg" alt="">
+                    <p class="text-[17px] opacity-70">Benefits of Investing in Mutual Funds</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/ok.svg" alt="">
+                    <p class="text-[17px] opacity-70">Mutual Fund Schemes and Types</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/ok.svg" alt="">
+                    <p class="text-[17px] opacity-70">Ways to Choose Mutual Fund Schemes</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/ok.svg" alt="">
+                    <p class="text-[17px] opacity-70">Offer Documents and Statements</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/ok.svg" alt="">
+                    <p class="text-[17px] opacity-70">Transactions in Mutual Funds</p>
+                </div>
+            </div>
+    
+            <!-- Centered Buttons -->
+            <div class="flex justify-center lg:justify-start space-x-4 mt-6 w-full">
+                <button class="px-6 py-4 bg-[#00D09C] text-white font-semibold rounded-[4px] shadow-md hover:bg-teal-600 lg:px-6 lg:py-2">
                     Know More
                 </button>
-                <button class="flex items-center px-6 py-2 text-[#00D09C] font-semibold rounded-lg hover:text-teal-600">
+                <button class="flex items-center px-6 py-4 text-[#00D09C] font-semibold rounded-lg hover:text-teal-600 lg:px-6 lg:py-2">
                     Watch Video <span><img src="./assets/play.svg" alt="" class="pl-2"></span>
                 </button>
             </div>
         </div>
-     </div>
+    </div>
+    
+    
      <!-- green tab -->
-    <div class="flex justify-center gap-[50px] bg-gradient-to-b from-[#E4FAF4] to-[#FFFFFF] py-[100px]">
+    <div class="flex justify-center gap-[50px] bg-gradient-to-b from-[#E4FAF4] to-[#FFFFFF] py-[100px] max-w-[1900px] w-full mx-auto">
         <div class="py-[50px] space-y-[50px]">
             <h1 class="text-[40px]">Ask the Expert</h1>
             <p class="opacity-70">You can schedule a meeting with an expense manager</p>
@@ -98,7 +152,7 @@
                     </button>    
                 </div>
                 <div class="space-y-[30px]">
-                    <img src="./assets/Schedule.svg" alt="" class="w-[36px] h-auto">
+                    <img src="./assets/Schedule.svg" alt="" class="w-[36px] h-auto bg-[#00d09c9d] ">
                     <h1 class="text-[24px]">Schedule a meeting</h1>
                     <p class="opacity-70 max-w-[260px] leading-[29px]">Expert will give you the best advice. Schedule a meeting with the expert to know mutual funds better.</p>
                     <button class="px-6 py-2 bg-[#00D09C] text-white font-semibold rounded-[4px] shadow-md hover:bg-teal-600">
@@ -112,7 +166,7 @@
         </div>
     </div>
     <!-- white tab -->
-     <div class="text-center space-y-[20px] p-[150px] bg-white shadow-[inset_0px_-50px_30px_rgba(0,0,0,0.07)] relative">
+     <div class="text-center space-y-[20px] p-[150px] bg-white shadow-[inset_0px_-50px_30px_rgba(0,0,0,0.07)] relative max-w-[1900px] w-full mx-auto">
         <h1 class="text-[30px] font-bold">Manage your Investment from your hand.</h1>
         <p class="opacity-50 w-[414px] text-center mx-auto">Now you will be at ease of investing, buying and selling easier with just a click.</p>
         <br>
@@ -124,7 +178,7 @@
         <img src="./assets/chat.svg" alt="" class="absolute top-[346px] right-[200px]">
      </div>
      <!-- last section -->
-    <div class="flex justify-between px-[100px] py-[100px] items-start">
+    <div class="flex justify-between px-[100px] py-[100px] items-start max-w-[1900px] w-full mx-auto">
         <div class="flex">
             <img src="./assets/logo.svg" alt="" class="w-[400px] h-auto">
         </div>
@@ -192,8 +246,8 @@
             </div>
           </div>
     </div>
-    <hr class="opacity-10">
-    <div class="flex justify-between px-[100px] py-[25px]">
+    <hr class="opacity-10 max-w-[1900px] w-full mx-auto">
+    <div class="flex justify-between px-[150px] py-[25px] max-w-[1900px] w-full mx-auto">
         <p class="opacity-50">Copyright 2019 Mutal Funds. All rights reserved.</p>
         <div class="flex gap-[20px] opacity-80">
             <img src="./assets/social 1.svg" alt="" class="">
