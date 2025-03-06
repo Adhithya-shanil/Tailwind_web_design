@@ -205,46 +205,88 @@
         </div>
         <img src="./assets/chat.svg" alt="" class="absolute top-[176.4px] right-[67.5px] lg:top-[346px] lg:right-[200px]">
      </div>
+
+     <!-- accordion flowbite -->
+     <div class="mx-auto space-y-4 lg:hidden px-4">
+    <div>
+        <img src="./assets/logo3.png" alt="" class="w-[200px] h-auto p-[30px]">
+    </div>
+
+    <!-- Quick Links Accordion -->
+    <div class="border border-gray-300/40 rounded-lg w-full">
+        <button type="button" class="flex justify-between items-center w-full p-4 font-semibold" 
+            data-accordion-target="#quick-links" aria-expanded="false" aria-controls="quick-links">
+            Quick Links
+            <span class="text-gray-500">+</span>
+        </button>
+        <div id="quick-links" class="hidden p-4 border-t border-gray-300/40">
+            <ul class="space-y-2">
+                <li><a href="#" class="text-sm hover:text-blue-500">Explore Funds</a></li>
+                <li><a href="#" class="text-sm hover:text-blue-500">Direct Mutual Funds</a></li>
+                <li><a href="#" class="text-sm hover:text-blue-500">Personal Loan</a></li>
+                <li><a href="#" class="text-sm hover:text-blue-500">LoanPass</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Top Funded Houses Accordion -->
+    <div class="border border-gray-300/50 rounded-lg">
+        <button type="button" class="flex justify-between items-center w-full p-4 font-semibold" 
+            data-accordion-target="#top-funded" aria-expanded="false" aria-controls="top-funded">
+            Top Funded Houses
+            <span class="text-gray-500">+</span>
+        </button>
+        <div id="top-funded" class="hidden p-4 border-t border-gray-300/50">
+            <ul class="space-y-2">
+                <li><a href="#" class="text-sm hover:text-blue-500">SBI Mutual Fund</a></li>
+                <li><a href="#" class="text-sm hover:text-blue-500">HDFC Mutual Fund</a></li>
+                <li><a href="#" class="text-sm hover:text-blue-500">Reliance Mutual Fund</a></li>
+                <li><a href="#" class="text-sm hover:text-blue-500">L&T Mutual Fund</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Resources Accordion -->
+    <div class="border border-gray-300/50 rounded-lg">
+        <button type="button" class="flex justify-between items-center w-full p-4 font-semibold" 
+            data-accordion-target="#resources" aria-expanded="false" aria-controls="resources">
+            Resources
+            <span class="text-gray-500">+</span>
+        </button>
+        <div id="resources" class="hidden p-4 border-t border-gray-300/50">
+            <ul class="space-y-2">
+                <li><a href="#" class="text-sm hover:text-blue-500">Calculators</a></li>
+                <li><a href="#" class="text-sm hover:text-blue-500">Beginner’s Guide</a></li>
+                <li><a href="#" class="text-sm hover:text-blue-500">Sitemap</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="flex justify-between text-[17px] px-[5px] pt-6 border-t border-gray-300/50">
+        <div>
+            <h3 class="font-semibold">Call Us At</h3>
+            <p class="text-gray-600">+91-8130813864</p>
+            <p class="text-gray-600">+91-8860039452</p>
+        </div>
+        <div>
+            <h3 class="font-semibold">Write to us at</h3>
+            <p class="text-gray-600">contact@neofund.com</p>
+        </div>
+    </div>
+    <div class="flex flex-col items-center gap-[10px] my-[50px]">
+        <h2 class="text-lg font-semibold mb-4">Download the App</h2>
+        <div class="space-y-2 flex items-center gap-[10px] opacity-70">
+            <img src="./assets/app3.svg" alt="">
+            <span class="pb-[8px]"><img src="./assets/app4.svg" alt="" class=""></span>
+        </div>
+      </div>
+</div>
+     <!-- flowbite end -->
      <!-- last section -->
     <div class="flex flex-col items-start lg:flex-row lg:max-w-[1900px] lg:w-full lg:mx-auto lg:justify-between lg:px-[100px] lg:py-[100px]">
         <div class="">
-            <img src="./assets/logo3.png" alt="" class="w-[200px] h-auto p-[30px]">
-        </div>
-        <div class=" mx-auto space-y-4 lg:hidden px-4">
-            <!-- Accordion Items -->
-            <div class="border border-gray-300/40 rounded-lg w-full">
-                <button class="flex justify-between items-center w-full p-4 font-semibold">
-                    Quick Links
-                    <span class="text-gray-500">+</span>
-                </button>
-            </div>
-        
-            <div class="border border-gray-300/50 rounded-lg">
-                <button class="flex justify-between items-center w-full p-4 font-semibold">
-                    Top Funded Houses
-                    <span class="text-gray-500">+</span>
-                </button>
-            </div>
-        
-            <div class="border border-gray-300/50 rounded-lg">
-                <button class="flex justify-between items-center w-full p-4 font-semibold">
-                    Resources
-                    <span class="text-gray-500">+</span>
-                </button>
-            </div>
-        
-            <!-- Contact Info -->
-            <div class="flex justify-between text-sm pt-6 border-t border-gray-300/50">
-                <div>
-                    <h3 class="font-semibold">Call Us At</h3>
-                    <p class="text-gray-600">+91-8130813864</p>
-                    <p class="text-gray-600">+91-8860039452</p>
-                </div>
-                <div>
-                    <h3 class="font-semibold">Write to us at</h3>
-                    <p class="text-gray-600">contact@neofund.com</p>
-                </div>
-            </div>
+            <img src="./assets/logo3.png" alt="" class="hidden w-[200px] h-auto p-[30px] lg:block">
         </div>
         
           
@@ -304,7 +346,7 @@
                   <!-- Resources Section -->
                   <div>
                     <h2 class="text-lg font-semibold mb-4">Download the App</h2>
-                    <div class="space-y-2 flex items-center gap-[10px]">
+                    <div class="space-y-2 flex items-center gap-[10px] opacity-70">
                         <img src="./assets/app3.svg" alt="">
                         <span class="pb-[8px]"><img src="./assets/app4.svg" alt="" class=""></span>
                     </div>
@@ -313,16 +355,45 @@
           </div>
     </div>
     <hr class="opacity-10 max-w-[1900px] w-full mx-auto">
-    <div class="flex justify-between px-[150px] py-[25px] max-w-[1900px] w-full mx-auto">
-        <p class="opacity-50">Copyright 2019 Mutal Funds. All rights reserved.</p>
-        <div class="flex gap-[20px] opacity-80">
-            <img src="./assets/social 1.svg" alt="" class="">
+    <<div class="flex flex-col justify-between px-[150px] py-[25px] lg:flex-row max-w-[1900px] w-full mx-auto space-y-[20px]">
+        <p class="opacity-50 text-center text-sm lg:text-xs">Copyright 2019 Mutual Funds. All rights reserved.</p>
+        <div class="flex gap-[20px] opacity-80 justify-center">
+            <img src="./assets/social 1.svg" alt="">
             <img src="./assets/social 2.svg" alt="">
             <img src="./assets/social 3.svg" alt="">
             <img src="./assets/social 4.svg" alt="">
-
         </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordionButtons = document.querySelectorAll("[data-accordion-target]");
+    
+            accordionButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const targetId = this.getAttribute("data-accordion-target");
+                    const targetElement = document.querySelector(targetId);
+    
+                    if (targetElement) {
+                        const isOpen = targetElement.classList.contains("hidden");
+                        
+                        // Close all accordions first
+                        document.querySelectorAll("[data-accordion-target]").forEach(btn => {
+                            const otherTarget = document.querySelector(btn.getAttribute("data-accordion-target"));
+                            if (otherTarget !== targetElement) {
+                                otherTarget.classList.add("hidden");
+                                btn.setAttribute("aria-expanded", "false");
+                            }
+                        });
+    
+                        // Toggle the clicked accordion
+                        targetElement.classList.toggle("hidden", !isOpen);
+                        this.setAttribute("aria-expanded", isOpen ? "true" : "false");
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
