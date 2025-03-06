@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind_webdesign</title>
     <link href="./src/output.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
 </head>
 <body>
     <div class="hidden lg:flex justify-end bg-[#E4FAF4] space-x-[10px] pr-[180px] text-[13px] py-[8px] max-w-[1900px] w-full mx-auto">
@@ -13,38 +14,61 @@
         <p class="opacity-70">Language :</p>
         <p class="flex items-center gap-[5px]">English <span><img src="./assets/dropdown.svg" alt=""></span></p>
     </div>
+    <!-- navbar flowbite -->
+
+
     <div class="container mx-auto">
         <!-- Header section -->
         <section class="flex flex-col lg:flex-row justify-between mt-[30px] items-center">
             <!-- Top Row: Logo & Hamburger Menu (Mobile), Side by Side on Large Screens -->
             <div class="flex justify-between items-center w-full lg:w-auto px-4 lg:px-0">
                 <a href="#"><img src="./assets/Group.png" alt="" class="w-[200px] h-auto lg:w-[200px]"></a>
-                <!-- Hamburger Menu (Visible on Mobile) -->
-                <div class="lg:hidden flex flex-col space-y-1">
-                    <span class="block w-6 h-1 bg-black rounded"></span>
-                    <span class="block w-6 h-1 bg-black rounded"></span>
-                    <span class="block w-6 h-1 bg-black rounded"></span>
-                </div>
+                
+                <!-- Hamburger Menu Button (Mobile) -->
+                <button data-collapse-toggle="navbar-menu" type="button" 
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
             </div>
+
+            <!-- Navbar Links (Visible on Desktop, Collapsible on Mobile) -->
+            <nav id="navbar-menu" class="hidden flex-col text-center lg:hidden">
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-[14px] px-3 py-2 block lg:inline">Learn with Fund Guru</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-[14px] px-3 py-2 block lg:inline">Explore Funds</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-[14px] px-3 py-2 block lg:inline">Ask the Expert</a>
+                <a href="#" class="text-black hover:text-gray-900 text-[14px] px-3 py-2 block lg:inline font-bold">Login/Register</a>
+            </nav>
         
             <!-- Search Box: Moves Below Logo on Mobile -->
-            <div class="flex justify-center w-full lg:w-auto mt-15 lg:mt-0">
+            <div class="flex justify-center w-full lg:w-auto mt-5 lg:mt-0">
                 <div class="flex justify-around rounded-md bg-gray-100 border border-gray-200 px-3 py-2 w-[90%] lg:max-w-[400px]">
                     <img src="./assets/search.svg" alt="" class="pr-2">
-                    <input type="text" placeholder="Search all mutual funds" class="text-[14px]  focus:outline-none px-3 mr-2 w-full lg:w-[250px]" />
+                    <input 
+                        type="text" 
+                        placeholder="Search all mutual funds" 
+                        class="text-[14px] focus:outline-none focus:ring-0 focus:border-transparent border-none shadow-none bg-transparent px-3 mr-2 w-full lg:w-[250px]" 
+                    />
                 </div>
             </div>
-        
-            <!-- Navbar (Hidden on Mobile, Visible on Large Screens) -->
-            <nav class="hidden lg:flex gap-2 ml-10">
-                <a href="#" class="text-gray-600 hover:text-gray-900 text-[14px] px-3">Learn with Fund Guru</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 text-[14px] px-3">Explore Funds</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 text-[14px] px-3">Ask the Expert</a>
-                <a href="#" class="text-black hover:text-gray-900 text-[14px] px-3 font-bold">Login/Register</a>
+
+
+        <!-- Navbar Links (Visible on Desktop, Collapsible on Mobile) -->
+            <nav id="navbar-menu" class="hidden flex-col lg:flex lg:flex-row gap-2 lg:ml-10 w-full lg:w-auto text-center lg:text-left">
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-[14px] px-3 py-2 block lg:inline">Learn with Fund Guru</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-[14px] px-3 py-2 block lg:inline">Explore Funds</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 text-[14px] px-3 py-2 block lg:inline">Ask the Expert</a>
+                <a href="#" class="text-black hover:text-gray-900 text-[14px] px-3 py-2 block lg:inline font-bold">Login/Register</a>
             </nav>
+            
         </section>
-        
     </div>
+    
+    
+  
+     <!--navbar flowbite end -->
     
     <!-- Hero section -->
     <section class="flex  mt-[57px] mb-[30px] justify-center gap-[550px] max-w-[1900px] w-full mx-auto">
@@ -299,5 +323,6 @@
 
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>
