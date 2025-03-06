@@ -638,6 +638,9 @@
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
@@ -1998,6 +2001,9 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -2046,6 +2052,9 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .py-\[5px\] {
+    padding-block: 5px;
+  }
   .py-\[5x\] {
     padding-block: 5x;
   }
@@ -2057,6 +2066,9 @@
   }
   .py-\[10px\] {
     padding-block: 10px;
+  }
+  .py-\[20px\] {
+    padding-block: 20px;
   }
   .py-\[25px\] {
     padding-block: 25px;
@@ -2094,11 +2106,17 @@
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
   }
+  .pr-2\.5 {
+    padding-right: calc(var(--spacing) * 2.5);
+  }
   .pr-\[8px\] {
     padding-right: 8px;
   }
   .pr-\[10px\] {
     padding-right: 10px;
+  }
+  .pr-\[50px\] {
+    padding-right: 50px;
   }
   .pr-\[100px\] {
     padding-right: 100px;
@@ -3049,6 +3067,11 @@
       width: 200px;
     }
   }
+  .lg\:w-\[250px\] {
+    @media (width >= 64rem) {
+      width: 250px;
+    }
+  }
   .lg\:w-\[300px\] {
     @media (width >= 64rem) {
       width: 300px;
@@ -3201,6 +3224,11 @@
   .lg\:py-3 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 3);
+    }
+  }
+  .lg\:py-\[10px\] {
+    @media (width >= 64rem) {
+      padding-block: 10px;
     }
   }
   .lg\:py-\[100px\] {
